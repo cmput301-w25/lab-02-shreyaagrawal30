@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String cityName = cityInput.getText().toString().trim();
                 if (!cityName.isEmpty()) {
-                    dataList.add(cityName); // Add city to the list
-                    cityAdapter.notifyDataSetChanged(); // Update ListView
-                    cityInput.setText(""); // Clear the input field
+                    dataList.add(cityName);
+                    cityAdapter.notifyDataSetChanged(); 
+                    cityInput.setText(""); 
                     Toast.makeText(MainActivity.this, cityName + " added to the list!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter a city name", Toast.LENGTH_SHORT).show();
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         cityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                selectedCity = dataList.get(position); // Store selected city
+                selectedCity = dataList.get(position);
                 Toast.makeText(MainActivity.this, "Selected: " + selectedCity, Toast.LENGTH_SHORT).show();
             }
         });
@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (selectedCity != null) {
-                    dataList.remove(selectedCity); // Remove selected city from list
-                    cityAdapter.notifyDataSetChanged(); // Update ListView
-                    selectedCity = null; // Reset the selected city
+                    dataList.remove(selectedCity); 
+                    cityAdapter.notifyDataSetChanged(); 
+                    selectedCity = null; 
                 } else {
                     Toast.makeText(MainActivity.this, "Please select a city to delete", Toast.LENGTH_SHORT).show();
                 }
