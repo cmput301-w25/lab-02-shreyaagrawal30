@@ -7,8 +7,11 @@
 - **CCID:** `sagrawa2`
 
 ## References and Resources
-
-List any resources used here, or simply put `N/A` if not applicable.
+I have used these websites, to gain proper understanding about the topic onClickListener in detail. 
+1. https://developer.android.com/reference/android/view/View.OnClickListener
+2. https://stackoverflow.com/questions/29479647/android-setonclicklistener-vs-onclicklistener-vs-view-onclicklistener
+3. https://www.educative.io/answers/what-is-an-onclicklistener
+   
 
 ## Verbal Collaboration
 
