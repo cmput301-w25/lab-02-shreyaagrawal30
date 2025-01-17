@@ -18,4 +18,3 @@ I have used these websites, to gain proper understanding about the topic onClick
 | Student Name | CCID      |
 | ------------ | --------- |
 | `Shreya Agrawal`    | `sagrawa2` |
-| `` | ``  |
